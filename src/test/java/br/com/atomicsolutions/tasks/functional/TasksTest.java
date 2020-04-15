@@ -19,7 +19,6 @@ public class TasksTest {
 	public WebDriver acessarAplicacao() throws MalformedURLException
 	{
 		System.setProperty("webdriver.chrome.driver",  "C:\\Proton\\ProtonClient\\Drivers\\chromedriver.exe");
-	//	WebDriver driver = new ChromeDriver();
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"),cap);
 		driver.navigate().to("http://192.168.100.23:8001/tasks");
